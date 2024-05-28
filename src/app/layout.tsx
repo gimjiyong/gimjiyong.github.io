@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+import HomeButton from '@/app/components/HomeButton'
+import NavBar from '@/app/components/NavBar'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <HomeButton />
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }
