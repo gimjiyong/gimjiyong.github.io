@@ -12,7 +12,7 @@ const protest = Protest_Riot({
 
 export default function Cover() {
   return (
-    <div className="relative flex justify-evenly w-screen h-screen">
+    <div className="relative flex justify-center items-center w-screen h-screen">
       <section
         className={`w-fit text-white z-10 flex flex-col justify-center gap-4 ${robotoSlab.className} animate-fadeInUp`}
       >
