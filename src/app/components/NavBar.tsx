@@ -65,7 +65,7 @@ export default function NavBar() {
         </button>
       </div>
       <div
-        className={`md:hidden fixed pt-28 top-0 left-0 h-screen w-full bg-black bg-opacity-65 flex flex-col gap-12 items-center text-nowrap transition-transform duration-500 ease-in-out ${
+        className={`md:hidden fixed pt-24 top-0 left-0 h-screen w-full bg-black bg-opacity-95 flex flex-col gap-12 items-center text-nowrap transition-transform duration-500 ease-in-out ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
