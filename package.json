@@ -6,9 +6,13 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "predeploy": "yarn type-check && yarn build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "gray-matter": "^4.0.3",
     "next": "15.3.2",
     "next-mdx-remote": "^5.0.0",
